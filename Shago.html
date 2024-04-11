@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Listening Button</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .phone {
+    position: relative;
+    width: 300px;
+    height: 600px;
+    border: 20px solid #000;
+    border-radius: 40px;
+    background-color: #333;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .speaker {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 10px;
+    background-color: #777;
+    border-radius: 10px;
+  }
+
+  .listening-button {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #f44336;
+    border: 10px solid #d32f2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+  }
+
+  .listening-button:hover {
+    background-color: #d32f2f;
+  }
+
+  .listening-text {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+  <div class="phone">
+    <div class="speaker"></div>
+    <button class="listening-button" onclick="startListening()">
+      <span class="listening-text">Listening...</span>
+    </button>
+  </div>
+
+  <script>
+    function startListening() {
+      // This is where you would add functionality for listening to audio
+      // For demonstration purposes, let's just log a message
+      console.log("Listening...");
+    }
+  </script>
+</body>
+</html>
