@@ -65,10 +65,17 @@
             background-color: #a30303;
         }
 
-        /* Style for the calculator and weather buttons */
-       .calculator-btn {
-    padding: 15px 30px;
-    font-size: 18px;
+.header-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.calculator-btn {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
     background-color: #007bff; /* Blue color */
     color: #fff;
     border: none;
@@ -77,11 +84,7 @@
     transition: background-color 0.3s ease;
     text-decoration: none;
     text-align: center;
-    width: 200px; /* Fixed width */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow */
-    position: absolute; /* Position absolutely */
-    top: 20px; /* 20px from the top */
-    left: 20px; /* 20px from the left */
 }
 
 .calculator-btn:hover {
@@ -94,6 +97,7 @@
     transform: translateY(0); /* Reset transform on click */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjusted box shadow on click */
 }
+
 
 
         #results {
@@ -193,9 +197,11 @@
         <div id="results"></div>
 
         <!-- Modified styling for the calculator and weather buttons -->
-        <a href="calculator.html" class="calculator-btn">Lommeregner</a>
+<div class="header-container">
+    <a href="calculator.html" class="calculator-btn">Lommeregner</a>
+    <a href="vejr.html" class="calculator-btn">Vejret</a>
+</div>
 
-        <a href="vejr.html" class="calculator-btn">Vejret</a>
 
         <div class="branding-bubbles">
             <div class="branding-bubble"></div>
