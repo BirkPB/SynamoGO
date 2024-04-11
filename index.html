@@ -66,33 +66,35 @@
         }
 
         /* Style for the calculator and weather buttons */
-        .calculator-btn {
-            display: block;
-            margin: 20px auto;
-            padding: 15px 30px;
-            font-size: 18px;
-            background-color: #007bff; /* Blue color */
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            text-decoration: none;
-            text-align: center;
-            width: 200px; /* Fixed width */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow */
-        }
+       .calculator-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #007bff; /* Blue color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    width: 200px; /* Fixed width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow */
+    position: absolute; /* Position absolutely */
+    top: 20px; /* 20px from the top */
+    left: 20px; /* 20px from the left */
+}
 
-        .calculator-btn:hover {
-            background-color: #0056b3; /* Darker blue on hover */
-            transform: translateY(-2px); /* Move button up on hover */
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Adjusted box shadow on hover */
-        }
+.calculator-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Move button up on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Adjusted box shadow on hover */
+}
 
-        .calculator-btn:active {
-            transform: translateY(0); /* Reset transform on click */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjusted box shadow on click */
-        }
+.calculator-btn:active {
+    transform: translateY(0); /* Reset transform on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjusted box shadow on click */
+}
+
 
         #results {
             margin-top: 20px;
